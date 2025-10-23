@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrand.Presentation", "CarBrand.Presentation\CarBrand.Presentation.csproj", "{357139CF-2886-4278-9D25-60932F057EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardBrand.Application", "CardBrand.Application\CardBrand.Application.csproj", "{F80797C8-DEB5-48C0-9C8D-B84D51420622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrand.Domain", "CarBrand.Domain\CarBrand.Domain.csproj", "{35B4532F-C73B-4AA3-9B3E-A0F380D78ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrand.Infraestructure", "CarBrand.Infraestructure\CarBrand.Infraestructure.csproj", "{ADF5B4F7-0BCF-4157-92F7-193861FA1146}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCarBrand", "TestCarBrand\TestCarBrand.csproj", "{0AA600D0-5FB8-821E-FD43-695A76DB7099}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{357139CF-2886-4278-9D25-60932F057EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357139CF-2886-4278-9D25-60932F057EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357139CF-2886-4278-9D25-60932F057EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357139CF-2886-4278-9D25-60932F057EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80797C8-DEB5-48C0-9C8D-B84D51420622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80797C8-DEB5-48C0-9C8D-B84D51420622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80797C8-DEB5-48C0-9C8D-B84D51420622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80797C8-DEB5-48C0-9C8D-B84D51420622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B4532F-C73B-4AA3-9B3E-A0F380D78ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B4532F-C73B-4AA3-9B3E-A0F380D78ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B4532F-C73B-4AA3-9B3E-A0F380D78ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B4532F-C73B-4AA3-9B3E-A0F380D78ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF5B4F7-0BCF-4157-92F7-193861FA1146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF5B4F7-0BCF-4157-92F7-193861FA1146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF5B4F7-0BCF-4157-92F7-193861FA1146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF5B4F7-0BCF-4157-92F7-193861FA1146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA600D0-5FB8-821E-FD43-695A76DB7099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA600D0-5FB8-821E-FD43-695A76DB7099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA600D0-5FB8-821E-FD43-695A76DB7099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA600D0-5FB8-821E-FD43-695A76DB7099}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73F9D56D-F558-4FD0-8DAF-E3D14B238235}
+	EndGlobalSection
+EndGlobal
