@@ -1,4 +1,4 @@
-using CarBrand.Infraestructure;
+﻿using CarBrand.Infraestructure;
 using CardBrand.Application;
 using CarBrand.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +21,29 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<CarBrandContext>();
-    dbContext.Database.Migrate();
+    
+    var maxRetries = 10;
+    var delay = TimeSpan.FromSeconds(5);
+
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            dbContext.Database.Migrate();
+            Console.WriteLine("✅ Migración completada.");
+            break;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"⏳ Intento {attempt}: PostgreSQL no está listo. Error: {ex.Message}");
+            if (attempt == maxRetries)
+            {
+                Console.WriteLine("❌ No se pudo conectar a la base de datos después de varios intentos.");
+                throw;
+            }
+            Thread.Sleep(delay);
+        }
+    }
 }
 
 // Configure the HTTP request pipeline.
